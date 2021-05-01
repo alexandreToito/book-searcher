@@ -1,0 +1,48 @@
+.book-detail-header .book-detail-blue-dot {
+  width: 63px;
+  height: 63px;
+
+  position: absolute;
+  left: 50%;
+  top: 115px;
+  margin-left: -113.5px;
+}
+
+.book-detail-header .book-detail-pink-dot {
+  width: 15px;
+  height: 15px;
+
+  position: absolute;
+  left: 50%;
+  top: 125px;
+  margin-left: -139.5px;
+}
+
+.book-detail-header .book-detail-transparent-dot {
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  left: 50%;
+  top: 84px;
+  margin-left: 60.5px;
+}
+
+.book-detail-header .book-detail-dashed-dot {
+  width: 61px;
+  height: 77px;
+
+  position: absolute;
+  left: 67%;
+  margin-left: 62.5px;
+}
+
+.book-detail-header .book-detail-thumbnail {
+  width: 151px;
+  height: 234px;
+
+  position: absolute;
+  left: 50%;
+  top: 84px;
+  margin-left: -75.5px;
+}
