@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+input {
+  position: absolute;
+  width: 297px;
+  height: 48px;
+  left: 19px;
+  top: 50px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: larger;
+  background: url(./icons/#030.png) no-repeat 16px 16px #fdfcfc;
+  box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
+  padding-left: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  position: absolute;
+  margin: 40% 0px 0 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.books-grid img {
+  height: 9.563rem;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.books-content {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.books-content:nth-last-child(2) {
+  margin-bottom: 15vh;
+}
+
+.books-content p {
+  margin: 5px 0;
+}
+
+.books-title {
+  color: rgba(49, 49, 49, 0.8);
+  font-weight: bold;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.books-author {
+  color: rgba(49, 49, 49, 0.8);
+  font-weight: 900;
+  font-size: 10px;
+}
+
+.books-load-more {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  grid-column: 3;
+
+  height: 9.563rem;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.books-load-more-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background: antiquewhite;
+  border: 2px dashed;
+  border-radius: 50%;
+  opacity: 0.3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.books-load-more-icon:disabled {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  height: 59px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+}
+
+.footer div {
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.footer i {
+  padding-top: 10px;
 }
