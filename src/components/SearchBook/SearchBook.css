@@ -63,30 +63,3 @@
 .books-load-more-icon:disabled {
   display: none;
 }
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 70%;
-  height: 59px;
-  background: #ffffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 56px;
-}
-
-.footer div {
-  text-align: center;
-  cursor: pointer;
-}
-
-.footer p {
-  margin: 5px 0;
-  font-size: 12px;
-}
-
-.footer i {
-  padding-top: 10px;
-}

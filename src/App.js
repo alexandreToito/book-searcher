@@ -4,11 +4,12 @@ import "./App.css";
 
 import SearchBook from "../src/components/SearchBook/SearchBook";
 import BookDetail from "../src/components/BookDetail/BookDetail";
+import Home from "../src/components/Home/Home";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
   const [totalData, setTotalData] = useState(null);
-  const [selectedBook, setSelectedBook] = useState(true);
+  const [selectedBook, setSelectedBook] = useState(null);
 
   const fetchData = async (params, quantity) => {
     await fetch(
@@ -33,15 +34,19 @@ function App() {
 
   return (
     <>
-      {/* <input
-        type="text"
-        placeholder="Search book"
-        value={inputValue}
-        onChange={e => {
-          setInputValue(e.target.value);
-          validateFetch(e.target.value, false);
-        }}
-      /> */}
+      {!selectedBook && (
+        <input
+          type="text"
+          placeholder="Search book"
+          value={inputValue}
+          onChange={e => {
+            setInputValue(e.target.value);
+            validateFetch(e.target.value, false);
+          }}
+        />
+      )}
+
+      {!totalData && !selectedBook && <Home />}
 
       {totalData && !selectedBook && (
         <SearchBook
@@ -52,7 +57,34 @@ function App() {
         />
       )}
 
-      {selectedBook && <BookDetail selectedBook={selectedBook} />}
+      {selectedBook && (
+        <BookDetail
+          selectedBook={selectedBook}
+          setSelectedBook={setSelectedBook}
+        />
+      )}
+
+      {!selectedBook && (
+        <footer className="footer">
+          <div
+            onClick={() => {
+              setTotalData(null);
+              setInputValue("");
+            }}
+          >
+            <i className="fa fa-home" aria-hidden="true" />
+            <p>Home</p>
+          </div>
+          <div>
+            <i className="fa fa-book" aria-hidden="true" />
+            <p>Libraries</p>
+          </div>
+          <div>
+            <i className="fa fa-user" aria-hidden="true" />
+            <p>Profile</p>
+          </div>
+        </footer>
+      )}
     </>
   );
 }

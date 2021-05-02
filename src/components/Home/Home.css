@@ -1,0 +1,141 @@
+.home-wrapper {
+  margin-top: 103px;
+}
+
+.home-wrapper .home-user {
+  display: flex;
+  margin-left: 12px;
+}
+
+.home-wrapper .home-user p {
+  font-size: 24px;
+}
+
+.home-wrapper .home-user .home-user-greetings {
+  margin-right: 6px;
+}
+
+.home-wrapper .home-user .home-user-userName {
+  color: #ff6978;
+}
+
+.home-wrapper .home-user-hand {
+  height: 24px;
+  width: 24px;
+
+  position: absolute;
+  left: 241px;
+  top: 128px;
+}
+
+.home-discover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.home-discover .home-discover-text {
+  font-size: 18px;
+  margin: 0;
+}
+
+.home-discover .home-discover-more {
+  font-size: 14px;
+  color: #4abdf1;
+  margin: 0;
+}
+
+.home-discover-blue {
+  height: 139px;
+  width: 272px;
+  background: #00173d;
+  border: 0 solid;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 15px 0 0 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-discover-blue-text {
+  color: white;
+}
+
+.home-discover-blue img {
+  width: 72px;
+  height: 111px;
+}
+
+.home-discover-title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home-discover-author {
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.home-discover-more {
+  font-size: 10px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.home-currently {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  margin-top: 50px;
+}
+
+.home-currently-text {
+  font-size: 18px;
+  margin: 0;
+}
+
+.home-currently-all {
+  font-size: 14px;
+  color: #4abdf1;
+  margin: 0;
+}
+
+.home-currently-div {
+  height: 100px;
+  width: 331px;
+  background: #eef5db;
+  border: 0 solid;
+  border-radius: 5px;
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+}
+
+.home-currently-div img {
+  width: 91px;
+  height: 136px;
+  margin: 0 10px 0 20px;
+}
+
+.home-currently-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.home-currently-author {
+  font-size: 10px;
+  margin: 0;
+  color: #74776d;
+}
+
+.home-currently-more {
+  font-size: 10px;
+  margin: 40px 0 0 0;
+}

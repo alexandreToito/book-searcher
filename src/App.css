@@ -4,11 +4,38 @@ input {
   height: 48px;
   left: 19px;
   top: 50px;
-  border: 1px solid;
+  border: 1px;
   border-radius: 10px;
   font-size: 16px;
   background: url(../src/icons/#030.png) no-repeat 16px 16px #fdfcfc;
   box-shadow: 5px 5px 80px rgba(212, 173, 134, 0.122623);
   padding-left: 40px;
   color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 70%;
+  height: 59px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 56px;
+}
+
+.footer div {
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.footer i {
+  padding-top: 10px;
 }

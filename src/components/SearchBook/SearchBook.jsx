@@ -47,21 +47,6 @@ const SearchBook = ({
           </div>
         )}
       </div>
-
-      <footer className="footer">
-        <div>
-          <i className="fa fa-home" aria-hidden="true"></i>
-          <p>Home</p>
-        </div>
-        <div onClick={() => console.log("clicado")}>
-          <i className="fa fa-book" aria-hidden="true"></i>
-          <p>Libraries</p>
-        </div>
-        <div>
-          <i className="fa fa-user" aria-hidden="true"></i>
-          <p>Profile</p>
-        </div>
-      </footer>
     </>
   );
 };

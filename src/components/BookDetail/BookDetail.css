@@ -37,6 +37,14 @@
   margin-left: 62.5px;
 }
 
+.book-detail-header .book-detail-goBack {
+  position: absolute;
+  left: 9%;
+  top: 62px;
+  border: none;
+  background: none;
+}
+
 .book-detail-header .book-detail-thumbnail {
   width: 151px;
   height: 234px;
@@ -45,4 +53,61 @@
   left: 50%;
   top: 84px;
   margin-left: -75.5px;
+}
+
+.book-detail-section .book-detail-info {
+  margin: 50px 10px 0 10px;
+}
+
+.book-detail-section .book-detail-info .book-detail-title {
+  margin: 10px 0;
+}
+
+.book-detail-section .book-detail-info .book-detail-author {
+  color: #ff6978;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.book-detail-section .book-detail-info .book-detail-description {
+  text-align: justify;
+  max-height: 292px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.book-detail-footer {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
+  height: 59px;
+  background: #ffffff;
+  border: 1px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 17px;
+  margin-bottom: 53px;
+}
+
+.book-detail-footer div {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.book-detail-footer span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.book-detail-footer i {
+  padding-top: 10px;
+}
+
+.book-detail-footer .solid {
+  border-top: 17px solid #bbb;
 }
