@@ -11,9 +11,11 @@ function App() {
   const [totalData, setTotalData] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
 
+  const API_KEY = "Please, insert your Google API Key";
+
   const fetchData = async (params, quantity) => {
     await fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=AIzaSyDu_MtOz_hq6eRLBqazjk5qtu6t1VwL_ts`
+      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${API_KEY}`
     )
       .then(response => response.json())
       .then(result => setTotalData(result.items));
@@ -24,7 +26,7 @@ function App() {
       case false:
         fetchData(params, 8);
         break;
-      case true && totalData.length < 16:
+      case true && totalData.length < 24:
         fetchData(params, totalData.length + 8);
         break;
       default:
@@ -46,7 +48,9 @@ function App() {
         />
       )}
 
-      {!totalData && !selectedBook && <Home />}
+      {!totalData && !selectedBook && (
+        <Home setSelectedBook={setSelectedBook} />
+      )}
 
       {totalData && !selectedBook && (
         <SearchBook

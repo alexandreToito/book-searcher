@@ -1,5 +1,6 @@
 .home-wrapper {
   margin-top: 103px;
+  margin-bottom: 110px;
 }
 
 .home-wrapper .home-user {
@@ -92,7 +93,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 12px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .home-currently-text {
@@ -138,4 +139,30 @@
 .home-currently-more {
   font-size: 10px;
   margin: 40px 0 0 0;
+}
+
+.home-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  margin-top: 50px;
+}
+
+.home-review-text {
+  font-size: 18px;
+  margin: 0;
+}
+
+.home-review-all {
+  font-size: 14px;
+  color: #4abdf1;
+  margin: 0;
+}
+
+.home-review-cover {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
 }

@@ -1,46 +1,21 @@
-# Desafio Frontend
+# Start Here
 
-Clone este repositório e comece já o nosso desafio.
+Clone this repository and once opened, install its dependencies with your preferred package manager: npm install or yarn
 
-Use React ou RN dependendo da vaga que você estiver tentando.
+Depending on the chosen manager, run npm start or yarn start to start the application on its default port (localhost: 3000).
 
-OBS: Caso tenha alguma dúvida em relação ao teste é só nos mandar sua pergunta no canal #challenge-foton do Slack do [React Brasil](https://react-brasil-slack.herokuapp.com/).
+## Attention
 
-## API
-
-Use a api do [google books](https://developers.google.com/books/docs/v1/using) para os dados da tela.
-
-```js
-const query = 'harry potter';
-fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
-```
-
-OBS: Pode ser utilizado a forma de chamada de apis de sua preferencia (fetch, axios, etc).
-
-## Design/Telas
-https://www.figma.com/file/KFElqzD983WNyvMY1SaF0c/book-app?node-id=0%3A1
-
-<img width="581" alt="Screen Shot 2021-04-13 at 10 19 47" src="https://user-images.githubusercontent.com/13947203/114559257-eb55ad00-9c41-11eb-9617-4e7627cc373e.png">
-
-
-O design do site consiste em 3 telas, sendo elas:
+This application is just a concept that is not ready to be sent to production. Its layout is not responsive and was created specifically for the Iphone X standard (375 x 812). So open your devtools and adjust to that pattern.
 
 ### Home
 
-1. Crie a tela pixel perfect com base no design acima
-2. Os livros precisam ser clicáveis para mostrar a tela de detalhes
+You can click on the two example books to access your information. Other than that, only the search bar and the "home" button at the bottom are dynamic.
 
 ### Search
 
-Nesta tela é **obrigatório** que o usuário tenha possibilidade de:
-
-1. Ver a lista dos livros baseado na busca;
-2. Possibilitar buscar mais livros com um botão no estilo "Load more";
-3. Buscar livros pelo nome;
-4. Clicar em um dos livros para ver seus detalhes.
+This component is completely dynamic, allowing the search for books not only by name. A plus icon indicates when more results can be loaded, just click it. Each item of the result is also clickable and allows you to navigate to the details screen of what was clicked. Click on the "home" option in the footer to return to the home screen.
 
 ### Detalhes do Livro
 
-Nesta tela é **obrigatório** que o usuário tenha possibilidade de:
-
-1. Ver as informações completas do livro selecionado;
+The footer on this page is just a concept and none of the options are dynamic. To return to the search screen, just click on the arrow icon in the upper left corner.

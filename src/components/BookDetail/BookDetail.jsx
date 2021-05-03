@@ -10,7 +10,6 @@ import dashedDot from "../../icons/dashed-dot.png";
 import noimage from "../../icons/no-image.jpg";
 
 const BookDetail = ({ selectedBook, setSelectedBook }) => {
-  console.log(selectedBook);
   return (
     <>
       <div className="book-detail-header">

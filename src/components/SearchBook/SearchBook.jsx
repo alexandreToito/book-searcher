@@ -39,7 +39,7 @@ const SearchBook = ({
             <button
               className="books-load-more-icon"
               title="Load more"
-              disabled={totalData.length === 16}
+              disabled={totalData.length === 24}
               onClick={() => validateFetch(inputValue, true)}
             >
               <i className="fa fa-plus" aria-hidden="true" />

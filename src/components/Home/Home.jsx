@@ -3,8 +3,19 @@ import React from "react";
 import "./Home.css";
 
 import hand from "../../icons/hand.png";
+import video from "../../icons/video.png";
 
-const Home = () => {
+const Home = ({ setSelectedBook }) => {
+  const API_KEY = "Please, insert your Google API Key";
+
+  const fetchData = async (params, quantity) => {
+    await fetch(
+      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${API_KEY}`
+    )
+      .then(response => response.json())
+      .then(result => setSelectedBook(result.items));
+  };
+
   return (
     <div className="home-wrapper">
       <div className="home-user">
@@ -27,6 +38,7 @@ const Home = () => {
         <img
           src="http://books.google.com/books/content?id=dsz5AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
           alt="Book Cover"
+          onClick={() => fetchData("dsz5AwAAQBAJ", 1)}
         />
       </div>
 
@@ -39,6 +51,7 @@ const Home = () => {
         <img
           src="http://books.google.com/books/content?id=Cy86CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
           alt="Book Cover"
+          onClick={() => fetchData("Cy86CQAAQBAJ", 1)}
         />
 
         <div className="home-currently-div-text">
@@ -46,6 +59,15 @@ const Home = () => {
           <p className="home-currently-author">by Adam Grant</p>
           <p className="home-currently-more">Chapter 2 from 9</p>
         </div>
+      </div>
+
+      <div className="home-review">
+        <p className="home-review-text">Reviews of The Day</p>
+        <p className="home-review-all">All Videos</p>
+      </div>
+
+      <div className="home-review-cover">
+        <img src={video} alt="Video Cover" />
       </div>
     </div>
   );
