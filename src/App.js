@@ -11,7 +11,9 @@ function App() {
   const [totalData, setTotalData] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  const apiKey = "Please, insert your Google API Key";
+  const apiKey = "Please insert you API key";
+
+  const inHome = !totalData && !selectedBook ? "inHome" : null;
 
   const fetchData = async (params, quantity) => {
     await fetch(
@@ -76,7 +78,7 @@ function App() {
               setInputValue("");
             }}
           >
-            <i className="fa fa-home" aria-hidden="true" />
+            <i className={`fa fa-home ${inHome}`} aria-hidden="true" />
             <p>Home</p>
           </div>
           <div>
