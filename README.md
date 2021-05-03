@@ -4,6 +4,8 @@ Clone this repository and once opened, install its dependencies with your prefer
 
 Depending on the chosen manager, run npm start or yarn start to start the application on its default port (localhost: 3000).
 
+In order for calls to the Google API to be made, it is necessary to insert a key in the environment variable called "apiKey" present in "App.js" inside the "src" folder. Since the CRA does not have a secure way to store security keys, you will need to create one. This link contains step-by-step information on how to proceed: https://developers.google.com/books/docs/v1/using
+
 ## Attention
 
 This application is just a concept that is not ready to be sent to production. Its layout is not responsive and was created specifically for the Iphone X standard (375 x 812). So open your devtools and adjust to that pattern.

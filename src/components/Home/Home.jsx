@@ -5,12 +5,10 @@ import "./Home.css";
 import hand from "../../icons/hand.png";
 import video from "../../icons/video.png";
 
-const Home = ({ setSelectedBook }) => {
-  const API_KEY = "Please, insert your Google API Key";
-
+const Home = ({ setSelectedBook, apiKey }) => {
   const fetchData = async (params, quantity) => {
     await fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${API_KEY}`
+      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${apiKey}`
     )
       .then(response => response.json())
       .then(result => setSelectedBook(result.items));

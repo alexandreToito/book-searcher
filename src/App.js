@@ -11,11 +11,11 @@ function App() {
   const [totalData, setTotalData] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  const API_KEY = "Please, insert your Google API Key";
+  const apiKey = "Please, insert your Google API Key";
 
   const fetchData = async (params, quantity) => {
     await fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${API_KEY}`
+      `https://www.googleapis.com/books/v1/volumes?q=${params}&maxResults=${quantity}&key=${apiKey}`
     )
       .then(response => response.json())
       .then(result => setTotalData(result.items));
@@ -49,7 +49,7 @@ function App() {
       )}
 
       {!totalData && !selectedBook && (
-        <Home setSelectedBook={setSelectedBook} />
+        <Home setSelectedBook={setSelectedBook} apiKey={apiKey} />
       )}
 
       {totalData && !selectedBook && (
