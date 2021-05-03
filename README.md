@@ -18,6 +18,6 @@ You can click on the two example books to access your information. Other than th
 
 This component is completely dynamic, allowing the search for books not only by name. A plus icon indicates when more results can be loaded, just click it. Each item of the result is also clickable and allows you to navigate to the details screen of what was clicked. Click on the "home" option in the footer to return to the home screen.
 
-### Detalhes do Livro
+### Details
 
 The footer on this page is just a concept and none of the options are dynamic. To return to the search screen, just click on the arrow icon in the upper left corner.
