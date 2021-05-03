@@ -11,7 +11,7 @@ function App() {
   const [totalData, setTotalData] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
 
-  const apiKey = "Please insert you API key";
+  const apiKey = "Please insert your API key";
 
   const inHome = !totalData && !selectedBook ? "inHome" : null;
 
